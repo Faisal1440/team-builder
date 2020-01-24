@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 function Form (props) {
-
+console.log (props);
 const [team, setTeam] = useState({
 name: "", email: "", role: "",
 });
@@ -16,7 +16,7 @@ console.log(team);
 const submitForm = e => {
 e.preventDefault();
 console.log(team)
-props.team(team)
+props.member(team)
 setTeam({name:"", email: "", role:""});
 }
 
